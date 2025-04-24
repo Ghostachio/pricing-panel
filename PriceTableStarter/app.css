@@ -6,7 +6,7 @@
   font-family: sans-serif;
 }
 body {
-  background-color: paleturquoise;
+  background-color: #a8dadc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,14 +30,16 @@ body {
 .pricing-plan {
   border-bottom: 2px solid paleturquoise;
   margin-top: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-right: 1px solid grey;
 }
 
 .pricing-plan:last-child {
   border-bottom: none;
+  border-right: none;
 }
 
 .pricing-header {
@@ -46,21 +48,22 @@ body {
 }
 
 .pricing-features-item {
-  color: rgb(108, 212, 144);
+  color: #1d3557;
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(128, 128, 128, 0.43);
+  font-weight: bold;
 }
 
 .pricing-price {
-  color: rgb(82, 134, 82);
+  color: #457b9d;
   font-size: 2rem;
   padding: 1rem 0;
   font-weight: bold;
 }
 
 .pricing-button {
-  color: rgb(119, 180, 119);
+  color: #457b9d;
   text-decoration: none;
   border: 2px solid;
   width: 150px;
@@ -68,11 +71,28 @@ body {
   padding: 0.5rem 0rem;
 }
 
+.pricing-button:hover {
+  background-color: #457b9d;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
 .pricing-img {
   width: 100%;
   max-width: 300px;
   border-radius: 20px;
   margin-bottom: 1.5rem;
+}
+
+.is-featured {
+  background-color: #1d3557;
+  color: white;
+}
+
+.is-featured:hover {
+  background-color: #a8dadc;
+  color: #1d3557;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (min-width: 700px) {
